@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="CSS/login.css">
+</head>
+<body>
+
+    <header id="header">
+        <div id="menu-toggle">&#9776;</div>
+        <nav id="nav-list">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+                <li><a href="media.html">Media</a></li>
+                <li><a href="php/quiz.php">Quiz</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="login-wrapper">
+        <div class="login">
+            <h2>Login</h2>
+            <p id="message"></p>
+            <br>
+            <form id="login-form" action="php/login.php" method="POST">
+              <label for="username">Username:</label>
+              <input type="text" id="username" name="username" required>
+
+              <label for="password">Password:</label>
+              <input type="password" id="password" name="password" required>
+
+              <button type="submit">Login</button>
+            </form>
+            <p id="register-link">Need an account? <a href="register.html">Register here</a></p>
+            <p><a href="forgot-password.html"></a>
+
+        </div>
+    </div>
+
+
+
+    <footer>
+        <div id="footer-container">
+            <div id="footer-info">
+                <p>Copyright 2025 WebProject.<br>All rights reserved.</p>
+            </div>
+            <div id="footer-links">
+                <ul class="footer-links-section">
+                    <h4>QUICK LINKS</h4>
+                    <li><a href="contact.html">Contact us</a></li>
+                    <li><a href="media.html">Media</a></li>
+                    <li><a href="multimedia.html">Multimedia</a></li>
+                    <li><a href="php/quiz.php">Quiz</a></li>
+                    <li><a href="meet-the-team.html">Meet the Team</a></li>
+                    <li><a href="reference.html">Reference</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="JS/header.js"></script>
+
+    <script>
+        document.getElementById("login-form").addEventListener("submit", function(e) {
+          e.preventDefault();
+        
+          const formData = new FormData(this);
+        
+          fetch("php/login.php", {
+            method: "POST",
+            body: formData
+          })
+          .then(res => res.text())
+          .then(data => {
+            const msg = document.getElementById("message");
+            if (data.trim() === "success") {
+              msg.textContent = "Login successful!";
+              msg.style.color = "green";
+              window.location.href = "php/selector.php";
+            } else {
+              msg.textContent = data;
+              msg.style.color = "red";
+            }
+          })
+          .catch(err => {
+            document.getElementById("message").textContent = "Error: " + err;
+          });
+        });
+    </script>
+</body>
+</html>

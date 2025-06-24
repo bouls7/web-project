@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="CSS/register.css">
+</head>
+<body>
+    <header id="header">
+        <div id="menu-toggle">&#9776;</div>
+        <nav id="nav-list">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+                <li><a href="media.html">Media</a></li>
+                <li><a href="php/quiz.php">Quiz</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<div class="register-wrapper">
+    <div class="register">
+        <h2>Register</h2>
+        <p id="message"></p>
+        <br>
+            <form id="register-form" action="php/register.php" method="POST">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            
+            <button type="submit" id="register-button">Register</button>
+        </form>
+        <p id="login-link">Already registered? <a href="login.html">Login here</a></p>
+
+    </div>
+</div>
+
+
+    <footer>
+        <div id="footer-container">
+            <div id="footer-info">
+                <p>Copyright 2025 WebProject.<br>All rights reserved.</p>
+            </div>
+            <div id="footer-links">
+                <ul class="footer-links-section">
+                    <h4>QUICK LINKS</h4>
+                    <li><a href="contact.html">Contact us</a></li>
+                    <li><a href="media.html">Media</a></li>
+                    <li><a href="multimedia.html">Multimedia</a></li>
+                    <li><a href="php/quiz.php">Quiz</a></li>
+                    <li><a href="meet-the-team.html">Meet the Team</a></li>
+                    <li><a href="reference.html">Reference</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="JS/header.js"></script>
+    <script>
+        document.getElementById("register-form").addEventListener("submit", function(e) {
+          e.preventDefault();
+        
+          const formData = new FormData(this);
+        
+          fetch("php/register.php", {
+            method: "POST",
+            body: formData
+          })
+          .then(res => res.text())
+          .then(data => {
+            const msg = document.getElementById("message");
+            if (data.trim() === "success") {
+              msg.textContent = "Registration successful!";
+              msg.style.color = "green";
+              // Optionally redirect or reset the form:
+              // window.location.href = "login.html";
+              // this.reset();
+            } else {
+              msg.textContent = data;
+              msg.style.color = "red";
+            }
+          })
+          .catch(err => {
+            document.getElementById("register-message").textContent = "Error: " + err;
+          });
+        });
+    </script>
+</body>
+</html>

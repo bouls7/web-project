@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meet the Team</title>
+    <link rel="stylesheet" href="CSS/meet-the-team.css">
+</head>
+<body onload="checkHash()">
+
+    <header id="header">
+        <div id="menu-toggle">&#9776;</div>
+        <nav id="nav-list">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+                <li><a href="media.html">Media</a></li>
+                <li><a href="php/quiz.php">Quiz</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="wrapper">
+    <div class="carousel-container">
+        <div class="carousel">
+            <div class="carousel-item" id="member1">
+                <h2>Elio Akiki</h2>
+                <div class="cv">
+
+                    <p>Single | Lebanese | D.O.B. 27/06/2003</p>
+                    <p>📞 +961 76 346454 | 📧 elioakiki0@gmail.com</p>
+                    <p>📍 Jal El Dib, Lebanon</p>
+                    
+                    <div class="section">
+                        <h2>Summary</h2>
+                        <p>21-year-old undergraduate student at USEK KASLIK, majoring in computer science (3rd year).</p>
+                    </div>
+                    
+                    <div class="section">
+                        <h2>Current Position</h2>
+                        <p>Student at USEK.</p>
+                    </div>
+                    
+                    <div class="section">
+                        <h2>Previous Positions</h2>
+                        <ul>
+                            <li><strong>Adon Technologies</strong> - Website building and fixing (Nov 22, 2024 – Feb 5, 2025)</li>
+                            <li><strong>Automotive at Rymco</strong> - Sales & Data collection (Jul 17, 2023 – Aug 20, 2023)</li>
+                            <li><strong>Internship at Data Consult</strong> (Jun 6 – Jul 7, 2023)</li>
+                            <li><strong>Diffa</strong> - Host (May 29, 2023 – present)</li>
+                            <li><strong>Yamas – Jal el Dib</strong> - Runner (Mar 2023 – Apr 2023)</li>
+                            <li><strong>O&C – Jal el Dib</strong> - Waiter (Oct 2022 – Mar 2023)</li>
+                            <li><strong>Tutor</strong> (June 2021)</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="section">
+                        <h2>Education</h2>
+                        <ul>
+                            <li>USEK Kaslik (2022-2023)</li>
+                            <li>Lebanese University Fanar (2021-2022)</li>
+                            <li>College Notre Dame De La Delivrance Zalka (2020-2021)</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="section">
+                        <h2>Languages</h2>
+                        <p>Fluent in English, Arabic, and French.</p>
+                    </div>
+                    
+                    <div class="section">
+                        <h2>Technical Skills</h2>
+                        <ul>
+                            <li>Programming Languages: C++, C, Java, Python</li>
+                            <li>Web Development: HTML, CSS, JavaScript</li>
+                            <li>Office Software: Microsoft Word, PowerPoint, Excel</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="schedule-container">
+                    <div class="schedule-header">
+                        <div></div>
+                        <div class="day">Monday</div>
+                        <div class="day">Tuesday</div>
+                        <div class="day">Wednesday</div>
+                        <div class="day">Thursday</div>
+                        <div class="day">Friday</div>
+                    </div>
+                    
+                    <!-- each div represents a cell in a row, all rows should have 5 cells hence where there is less its due to the row spaning -->
+                    <div class="schedule-body">
+                    
+                        <div class="time-label">8:00 AM</div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div class="course lab" onclick="showInfo('Lab 21134', 'Dr Philip Riachy', '8:00 AM - 10:30 AM')">Lab Chem 12765
+                        </div>
+                    
+                        <div class="time-label">8:15 AM</div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    
+                        <div class="time-label">8:30 AM</div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    
+                        <div class="time-label">8:45 AM</div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    
+                        <div class="time-label">9:00 AM</div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    
+                        <div class="time-label">9:15 AM</div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    
+                        <div class="time-label">9:30 AM</div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    
+                        <div class="time-label">9:45 AM</div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    
+                        <div class="time-label">10:00 AM</div>
+                        <div></div>
+                        <div class="course web" onclick="showInfo('Web 21890', 'Dr Maroun Abi Assaf', '10:00 AM - 11:40 AM')">Web 21890
+                        </div>
+                        <div></div>
+                        <div class="course web web2" onclick="showInfo('Web 21890', 'Dr Maroun Abi Assaf', '10:00 AM - 11:40 AM')">Web 21890
+                        </div>
+                    
+                        <div class="time-label">10:15 AM</div>
+                        <div></div>
+                        <div></div>
+                    
+                        <div class="time-label">10:30 AM</div>
+                        <div></div>
+                        <div></div>
+                    
+                        <div class="time-label">10:45 AM</div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    
+                        <div class="time-label">11:00 AM</div>
+                        <div class="course os" onclick="showInfo('OS 21804', 'Dr Jacque Demerjian', '11:00 AM - 12:15 PM')">OS 21804</div>
+                        <div></div>
+                        <div class="course os os2" onclick="showInfo('OS 21804', 'Dr Jacque Demerjian', '11:00 AM - 12:15 PM')">OS 21804
+                        </div>
+                    
+                        <div class="time-label">11:15 AM</div>
+                        <div></div>
+                    
+                        <div class="time-label">11:30 AM</div>
+                        <div></div>
+                    
+                        <div class="time-label">11:45 AM</div>
+                        <div></div>
+                    
+                        <div class="time-label">12:00 PM</div>
+                        <div class="course sta" onclick="showInfo('Statistics 22592', 'Dr Christiana Zaraket', '12:00 PM - 1:40 PM')">Sta
+                            22592</div>
+                        <div></div>
+                        <div class="course sta sta2" onclick="showInfo('Statistics 22592', 'Dr Christiana Zaraket', '12:00 PM - 1:40 PM')">
+                            Sta 22592</div>
+                    
+                        <div class="time-label">12:15 PM</div>
+                        <div></div>
+                    
+                        <div class="time-label">12:30 PM</div>
+                        <div class="course psycho" onclick="showInfo('Psychology 22123', 'Dr Tania Tannous', '12:30 PM - 1:45 PM')">Psycho
+                            22123</div>
+                        <div></div>
+                        <div class="course psycho psycho2" onclick="showInfo('Psychology 22123', 'Dr Tania Tannous', '12:30 PM - 1:45 PM')">
+                            Psycho 22123</div>
+                    
+                        <div class="time-label">12:45 PM</div>
+                        <div></div>
+                    
+                        <div class="time-label">1:00 PM</div>
+                        <div></div>
+                    
+                        <div class="time-label">1:15 PM</div>
+                        <div></div>
+                    
+                        <div class="time-label">1:30 PM</div>
+                        <div></div>
+                    
+                        <div class="time-label">1:45 PM</div>
+                        <div></div>
+                    
+                        <div class="time-label">2:00 PM</div>
+                        <div></div>
+                        <div class="course calc" onclick="showInfo('calculus 22511', 'Dr Ranine Tarabay', '2:00 PM - 3:40 PM')">Calc2 22511
+                        </div>
+                        <div></div>
+                        <div class="course calc calc2" onclick="showInfo('calculus 22511', 'Dr Ranine Tarabay', '2:00 PM - 3:40 PM')">Calc2
+                            22511</div>
+                        <div></div>
+                    
+                        <div class="time-label">2:15 PM</div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    
+                        <div class="time-label">2:30 PM</div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    
+                        <div class="time-label">2:45 PM</div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    
+                        <div class="time-label">3:00 PM</div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    
+                        <div class="time-label">3:15 PM</div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    
+                        <div class="time-label">3:30 PM</div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    
+                        <div class="time-label">3:45 PM</div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    
+                        <div class="time-label">4:00 PM</div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+
+                        <div class="time-label">4:15 PM</div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+
+                        <div class="time-label">4:30 PM</div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+
+                        <div class="time-label">4:45 PM</div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+
+                        <div class="time-label">5:00 PM</div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="carousel-item" id="member2">
+                <h2>Charbel Kassas</h2>
+                <div class="cv">
+                
+                    <p>Single | Lebanese | D.O.B. 01/03/2004</p>
+                    <p>📞 +961 76 465287 | 📧 charbelkassas123@gmail.com</p>
+                    <p>📍 Dik el Mehdi, Lebanon</p>
+                
+                    <div class="section">
+                        <h2>Summary</h2>
+                        <p>21-year-old undergraduate student at USEK KASLIK, majoring in computer science (3rd year).</p>
+                    </div>
+                
+                    <div class="section">
+                        <h2>Current Position</h2>
+                        <p>Student at USEK.</p>
+                    </div>
+                
+                    <div class="section">
+                        <h2>Previous Positions</h2>
+                        <ul>
+                            <li><strong>Bigstar International Clothing</strong> - Assistant manager (2023-2024)</li>
+                            <li><strong>Dunkin Donuts</strong> - Barista(2022-2023)</li>
+                            <li><strong>Casper & Gambinis</strong> - Runner (2021-2022)</li>
+                        </ul>
+                    </div>
+                
+                    <div class="section">
+                        <h2>Education</h2>
+                        <ul>
+                            <li>USEK Kaslik (2022-2026)</li>
+                            <li>Saint Famille Mazraat Yachouh (2019)</li>
+                        </ul>
+                    </div>
+                
+                    <div class="section">
+                        <h2>Languages</h2>
+                        <p>Fluent in English, Arabic, and French.</p>
+                    </div>
+                
+                    <div class="section">
+                        <h2>Technical Skills</h2>
+                        <ul>
+                            <li>Programming Languages: C++, C, Java, Python</li>
+                            <li>Web Development: HTML, CSS, JavaScript,php,mern stack</li>
+                            <li>Office Software: Microsoft Word, PowerPoint, Excel,power bi</li>
+                        </ul>
+                    </div>
+                
+                </div>
+                
+                <div class="schedule-container">
+                    <div class="schedule-header">
+                        <div></div>
+                        <div class="day">Monday</div>
+                        <div class="day">Tuesday</div>
+                        <div class="day">Wednesday</div>
+                        <div class="day">Thursday</div>
+                        <div class="day">Friday</div>
+                    </div>
+                
+                    <!-- each div represents a cell in a row, all rows should have 5 cells hence where there is less its due to the row spaning -->
+                    <div class="schedule-body">
+                
+                        <div class="time-label">8:00 AM</div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div class="course lab" onclick="showInfo('Lab 21134', 'Dr Philip Riachy', '8:00 AM - 10:30 AM')">Lab Chem 12765
+                        </div>
+                
+                        <div class="time-label">8:15 AM</div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                
+                        <div class="time-label">8:30 AM</div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                
+                        <div class="time-label">8:45 AM</div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                
+                        <div class="time-label">9:00 AM</div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                
+                        <div class="time-label">9:15 AM</div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                
+                        <div class="time-label">9:30 AM</div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                
+                        <div class="time-label">9:45 AM</div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                
+                        <div class="time-label">10:00 AM</div>
+                        <div></div>
+                        <div class="course web" onclick="showInfo('Web 21890', 'Dr Maroun Abi Assaf', '10:00 AM - 11:40 AM')">Web 21890
+                        </div>
+                        <div></div>
+                        <div class="course web web2" onclick="showInfo('Web 21890', 'Dr Maroun Abi Assaf', '10:00 AM - 11:40 AM')">Web
+                            21890
+                        </div>
+                
+                        <div class="time-label">10:15 AM</div>
+                        <div></div>
+                        <div></div>
+                
+                        <div class="time-label">10:30 AM</div>
+                        <div></div>
+                        <div></div>
+                
+                        <div class="time-label">10:45 AM</div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                
+                        <div class="time-label">11:00 AM</div>
+                        <div class="course os" onclick="showInfo('OS 21804', 'Dr Jacque Demerjian', '11:00 AM - 12:15 PM')">OS 21804
+                        </div>
+                        <div></div>
+                        <div class="course os os2" onclick="showInfo('OS 21804', 'Dr Jacque Demerjian', '11:00 AM - 12:15 PM')">OS 21804
+                        </div>
+                
+                        <div class="time-label">11:15 AM</div>
+                        <div></div>
+                
+                        <div class="time-label">11:30 AM</div>
+                        <div></div>
+                
+                        <div class="time-label">11:45 AM</div>
+                        <div></div>
+                
+                        <div class="time-label">12:00 PM</div>
+                        <div class="course sta" onclick="showInfo('Statistics 22592', 'Dr Christiana Zaraket', '12:00 PM - 1:40 PM')">
+                            Sta
+                            22592</div>
+                        <div></div>
+                        <div class="course sta sta2"
+                            onclick="showInfo('Statistics 22592', 'Dr Christiana Zaraket', '12:00 PM - 1:40 PM')">
+                            Sta 22592</div>
+                
+                        <div class="time-label">12:15 PM</div>
+                        <div></div>
+                
+                        <div class="time-label">12:30 PM</div>
+                        <div class="course psycho" onclick="showInfo('Psychology 22123', 'Dr Tania Tannous', '12:30 PM - 1:45 PM')">
+                            Psycho
+                            22123</div>
+                        <div></div>
+                        <div class="course psycho psycho2"
+                            onclick="showInfo('Psychology 22123', 'Dr Tania Tannous', '12:30 PM - 1:45 PM')">
+                            Psycho 22123</div>
+                
+                        <div class="time-label">12:45 PM</div>
+                        <div></div>
+                
+                        <div class="time-label">1:00 PM</div>
+                        <div></div>
+                
+                        <div class="time-label">1:15 PM</div>
+                        <div></div>
+                
+                        <div class="time-label">1:30 PM</div>
+                        <div></div>
+                
+                        <div class="time-label">1:45 PM</div>
+                        <div></div>
+                
+                        <div class="time-label">2:00 PM</div>
+                        <div class="course calc" onclick="showInfo('calculus 22511', 'Dr Charbel klaiani', '2:00 PM - 3:40 PM')">Calc2 22511
+                        </div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div class="course calc calc2" onclick="showInfo('calculus 22511', 'Ranine Tarabay', '2:00 PM - 3:40 PM')">Calc2 22511</div> <!--modify instructer name don't forget-->
+                        <div class="time-label">2:15 PM</div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                
+                        <div class="time-label">2:30 PM</div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                
+                        <div class="time-label">2:45 PM</div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                
+                        <div class="time-label">3:00 PM</div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                
+                        <div class="time-label">3:15 PM</div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                
+                        <div class="time-label">3:30 PM</div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                
+                        <div class="time-label">3:45 PM</div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                
+                        <div class="time-label">4:00 PM</div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+
+                        <div class="time-label">4:15 PM</div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        
+                        <div class="time-label">4:30 PM</div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        
+                        <div class="time-label">4:45 PM</div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        
+                        <div class="time-label">5:00 PM</div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item" id="member3">
+                <h2>Joe Rabbat</h2>
+
+                <div class="cv">
+                
+                    <p>Single | Lebanese | D.O.B. 20/05/2002</p>
+                    <p>📞 +961 71 680056 | 📧 joe_rabbat111@hotmail.com</p>
+                    <p>📍 Batroun, Lebanon</p>
+                
+                    <div class="section">
+                        <h2>Summary</h2>
+                        <p>23-year-old undergraduate student at USEK KASLIK, majoring in computer science (3rd year).</p>
+                    </div>
+                
+                    <div class="section">
+                        <h2>Current Position</h2>
+                        <p>Student at USEK.</p>
+                    </div>
+                
+                    <div class="section">
+                        <h2>Previous Positions</h2>
+                        <ul>
+                            <li><strong>Nakhle</strong> - Production Quality control (Currently)</li>
+                            <li><strong>Batrouniet</strong> - Waiter (2018-2024)</li>
+                            <li><strong>Colonie Ebrine</strong> - Coach (2020-2022)</li>
+                            <li><strong>Colonie SSCC</strong> - Coach (2019-2020)</li>
+                        </ul>
+                    </div>
+                
+                    <div class="section">
+                        <h2>Education</h2>
+                        <ul>
+                            <li>USEK Kaslik (2021-2022)</li>
+                            <li>Saint Famille Mazraat Yachouh (2021-2022)</li>
+                        </ul>
+                    </div>
+                
+                    <div class="section">
+                        <h2>Languages</h2>
+                        <p>Fluent in English, Arabic, and French.</p>
+                    </div>
+                
+                    <div class="section">
+                        <h2>Technical Skills</h2>
+                        <ul>
+                            <li>Programming Languages: C++, C, Java, Python</li>
+                            <li>Web Development: HTML, CSS, JavaScript</li>
+                            <li>Office Software: Microsoft Word, PowerPoint, Excel</li>
+                        </ul>
+                    </div>
+                
+                </div>
+
+                <div class="schedule-container">
+                    <div class="schedule-header">
+                        <div></div>
+                        <div class="day">Monday</div>
+                        <div class="day">Tuesday</div>
+                        <div class="day">Wednesday</div>
+                        <div class="day">Thursday</div>
+                        <div class="day">Friday</div>
+                    </div>
+                
+                    <!-- each div represents a cell in a row, all rows should have 5 cells hence where there is less its due to the row spaning -->
+                    <div class="schedule-body">
+                
+                        <div class="time-label">8:00 AM</div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                
+                        <div class="time-label">8:15 AM</div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                
+                        <div class="time-label">8:30 AM</div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                
+                        <div class="time-label">8:45 AM</div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                
+                        <div class="time-label">9:00 AM</div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                
+                        <div class="time-label">9:15 AM</div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                
+                        <div class="time-label">9:30 AM</div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                
+                        <div class="time-label">9:45 AM</div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                
+                        <div class="time-label">10:00 AM</div>
+                        <div></div>
+                        <div class="course web" onclick="showInfo('Web 21890', 'Dr Maroun Abi Assaf', '10:00 AM - 11:40 AM')">Web 21890
+                        </div>
+                        <div class="course workshop" onclick="showInfo('Workshop 21645', 'Dr Maroun Abi Assaf', '10:00 AM - 11:40 AM')">Workshop
+                            21646</div>
+                        <div class="course web web2" onclick="showInfo('Web 21890', 'Dr Maroun Abi Assaf', '10:00 AM - 11:40 AM')">Web
+                            21890</div>
+                        <div></div>
+                
+                        <div class="time-label">10:15 AM</div>
+                        <div></div>
+                        <div></div>
+                
+                        <div class="time-label">10:30 AM</div>
+                        <div></div>
+                        <div></div>
+                
+                        <div class="time-label">10:45 AM</div>
+                        <div></div>
+                        <div></div>
+                
+                        <div class="time-label">11:00 AM</div>
+                        <div class="course os" onclick="showInfo('OS 21804', 'Dr Jacque Demerjian', '11:00 AM - 12:15 PM')">OS 21804
+                        </div>
+                        <div class="course os os2" onclick="showInfo('OS 21804', 'Dr Jacque Demerjian', '11:00 AM - 12:15 PM')">OS 21804
+                        </div>
+                
+                        <div class="time-label">11:15 AM</div>
+                
+                        <div class="time-label">11:30 AM</div>
+                
+                        <div class="time-label">11:45 AM</div>
+                
+                        <div class="time-label">12:00 PM</div>
+                        <div class="course sta" onclick="showInfo('Statistics 22592', 'Dr Christiana Zaraket', '12:00 PM - 1:40 PM')">
+                            Sta 22592</div>
+                        <div></div>
+                        <div class="course sta sta2"
+                            onclick="showInfo('Statistics 22592', 'Dr Christiana Zaraket', '12:00 PM - 1:40 PM')">Sta 22592</div>
+                
+                        <div class="time-label">12:15 PM</div>
+                        <div></div>
+                
+                        <div class="time-label">12:30 PM</div>
+                        <div class="course cyber" onclick="showInfo('Cyber Security 21524', 'Dr Ali Rachini', '12:30 PM - 1:45 PM')">
+                            Cyber 21524</div>
+                        <div></div>
+                        <div class="course cyber cyber2"
+                            onclick="showInfo('Cyber Security 21524', 'Dr Ali Raachini', '12:30 PM - 1:45 PM')">Cyber 21524</div>
+                
+                        <div class="time-label">12:45 PM</div>
+                        <div></div>
+                
+                        <div class="time-label">1:00 PM</div>
+                        <div></div>
+                
+                        <div class="time-label">1:15 PM</div>
+                        <div></div>
+                
+                        <div class="time-label">1:30 PM</div>
+                        <div></div>
+                
+                        <div class="time-label">1:45 PM</div>
+                        <div></div>
+                
+                        <div class="time-label">2:00 PM</div>
+                        <div class="course lab" onclick="showInfo('Lab 21127', 'Dr Roger Matta', '2:00 PM - 4:30 PM')">Lab Chem 21127
+                        </div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                
+                        <div class="time-label">2:15 PM</div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                
+                        <div class="time-label">2:30 PM</div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                
+                        <div class="time-label">2:45 PM</div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                
+                        <div class="time-label">3:00 PM</div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                
+                        <div class="time-label">3:15 PM</div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                
+                        <div class="time-label">3:30 PM</div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                
+                        <div class="time-label">3:45 PM</div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                
+                        <div class="time-label">4:00 PM</div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+
+                        <div class="time-label">4:15 PM</div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        
+                        <div class="time-label">4:30 PM</div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        
+                        <div class="time-label">4:45 PM</div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        
+                        <div class="time-label">5:00 PM</div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="carousel-controls">
+            <button id="prev">&#9664;</button>
+            <span class="page-number" id="page-number">1<span>/3</span></span>
+            <button id="next">&#9654;</button>
+        </div>
+    </div>
+    </div>
+
+    <footer>
+        <div id="footer-container">
+            <div id="footer-info">
+                <p>Copyright 2025 WebProject.<br>All rights reserved.</p>
+            </div>
+            <div id="footer-links">
+                <ul class="footer-links-section">
+                    <h4>QUICK LINKS</h4>
+                    <li><a href="contact.html">Contact us</a></li>
+                    <li><a href="media.html">Media</a></li>
+                    <li><a href="multimedia.html">Multimedia</a></li>
+                    <li><a href="php/quiz.php">Quiz</a></li>
+                    <li><a href="meet-the-team.html">Meet the Team</a></li>
+                    <li><a href="reference.html">Reference</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="JS/carousel.js"></script>
+    <script src="JS/header.js"></script>
+    <script src="JS/schedule.js"></script>
+    <script type="module" src="JS/hash.js"></script>
+</body>
+</html>

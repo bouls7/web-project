@@ -1,0 +1,444 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #061539;
+    margin-top: 100px;
+    transition: margin-top 0.3s ease-in-out;
+
+}
+
+#menu-toggle {
+    display: none;
+    position: fixed;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 50px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    /*background-color: #061539;*/
+    background-color: rgba(151, 181, 244, 0.6);
+    transition: top 0.3s ease, height 0.3s ease-in-out;
+}
+
+header>nav {
+    width: 350px;
+    margin: auto;
+}
+
+header>nav>ul {
+    list-style-type: none;
+}
+
+header>nav li {
+    display: inline;
+    margin-right: 20px;
+    line-height: 50px;
+}
+
+header>nav a {
+    text-decoration: none;
+    color: #061539;
+    font-weight: bold;
+}
+
+nav li:hover {
+    text-decoration: underline;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-container {
+    width: 80%;
+    max-width: 900px;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 100%;
+    padding: 40px;
+    background: white;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.carousel-controls {
+    position: absolute;
+    top: 99%;
+    left: 25%;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.carousel-controls button {
+    background-color: rgba(151, 181, 244, 0.6);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.carousel-controls .page-number {
+    font-size: 16px;
+    color: #061539;
+    align-self: center;
+}
+
+.carousel-controls:hover button {
+    background-color: rgba(151, 181, 244, 0.8);
+}
+
+.cv {
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+/* to allign the schedule since the cv is shorter*/
+#member2 .cv{
+    margin-bottom: 170px;
+}
+
+.cv h1,
+h2 {
+    color: #333;
+}
+
+.cv .section {
+    margin-bottom: 20px;
+}
+
+.cv .section h2 {
+    border-bottom: 2px solid rgba(151, 181, 244, 0.6);
+    padding-bottom: 5px;
+}
+
+.cv ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.cv ul li {
+    margin: 5px 0;
+}
+
+.schedule-container {
+    max-width: 900px;
+    margin-top: 20px;
+    background: white;
+    border-radius: 10px;
+    overflow-x: scroll;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.schedule-header {
+    display: grid;
+    grid-template-columns: 100px repeat(5, 1fr);
+    background-color: #b0c4ff;
+    padding: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.time-label {
+    background: rgba(151, 181, 244, 0.6);
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    grid-column: 1;
+}
+
+.schedule-body {
+    display: grid;
+    min-width: 500px;
+    grid-template-columns: 100px repeat(5, 1fr);
+    grid-template-rows: repeat(37, 30px);
+    /* 15-minute intervals */
+}
+
+.schedule-body>div {
+    padding: 10px;
+    /*border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd;*/
+    border: 1px solid #ddd;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.course {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin: 2px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.15s ease-in-out;
+}
+
+.course:hover {
+    transform: scale(1.1);
+}
+
+
+/* Courses of member 1 */
+.lab {
+    background-color: #ab47bc;
+    grid-row: 1 / span 11;/* Spans 2.5 hours (10 x 15 minutes) */
+    grid-column: 6;
+    /* Friday */
+}
+
+.web {
+    background-color: #f4b400;
+    grid-row: 9 / span 8;
+    grid-column: 3;
+    /* Tuesday */
+}
+
+.os {
+    background-color: #FFB6C1;
+    grid-row: 13 / span 6;
+    grid-column: 2;
+    /* Monday */
+}
+
+.sta {
+    background-color: #db4437;
+    grid-row: 17 / span 8;
+    grid-column: 3;
+    /* Tuesday */
+}
+
+.psycho {
+    background-color: #4285f4;
+    grid-row: 19 / span 6;
+    grid-column: 2;
+    /* Monday */
+}
+
+.calc {
+    background-color: #0f9d58;
+    grid-row: 25 / span 8;
+    grid-column: 3;
+    /* Tuesday */
+}
+
+/* to separate courses on multiple days */
+.web2 {
+    background-color: #f4b400;
+    grid-row: 9 / span 8;
+    grid-column: 5;
+    /* Thursday */
+}
+
+.os2 {
+    background-color: #FFB6C1;
+    grid-row: 13 / span 6;
+    grid-column: 6;
+    /* Friday */
+}
+
+.sta2 {
+    background-color: #db4437;
+    grid-row: 17 / span 8;
+    grid-column: 5;
+    /* Thursday */
+}
+
+.psycho2 {
+    background-color: #4285f4;
+    grid-row: 19 / span 6;
+    grid-column: 6;
+    /* Friday */
+}
+
+.calc2 {
+    background-color: #0f9d58;
+    grid-row: 25 / span 8;
+    grid-column: 5;
+    /* Thursday */
+}
+
+/* Courses of member 2 */
+#member2 .calc{
+    background-color: #0f9d58;
+    grid-row: 25 / span 8;
+    grid-column: 2;
+    /* Monday */
+}
+#member2 .calc2 {
+    background-color: #0f9d58;
+    grid-row: 25 / span 8;
+    grid-column: 6;
+    /* Friday */
+}
+
+/* Courses of member 3*/
+#member3 .lab {
+    background-color: #ab47bc;
+    grid-row: 25 / span 11;
+    grid-column: 2;
+    /* Monday */
+}
+
+.cyber {
+    background-color: #4285f4;
+    grid-row: 19 / span 6;
+    /* Spans 1.5 hours (6 x 15 minutes) */
+    grid-column: 2;
+    /* Monday */
+}
+
+.cyber2 {
+    background-color: #4285f4;
+    grid-row: 19 / span 6;
+    grid-column: 6;
+}
+
+.workshop{
+    background-color: #47BCA9;
+    grid-row: 9 / span 8;
+    grid-column: 4;
+}
+
+footer {
+    margin-top: 20px;
+    background-color: rgba(151, 181, 244, 0.7);
+}
+
+#footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 35px 0px;
+    justify-content: center;
+    align-content: center;
+}
+
+#footer-info {
+    margin: 10px 0px;
+    width: 50%;
+}
+
+footer #footer-info a {
+    color: #061539;
+}
+
+#footer-links {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 35px;
+}
+
+#footer-links ul {
+    list-style-type: none;
+    width: 150px;
+    margin-right: 50px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #061539;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 600px) {
+
+    header {
+        height: 50px;
+    }
+
+    body.menu-open header {
+        height: 380px;
+    }
+
+    #menu-toggle {
+        display: block;
+        font-size: 30px;
+        cursor: pointer;
+        padding: 10px;
+        color: #061539;
+        left: 0;
+
+    }
+
+    #nav-list {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    #nav-list li {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    #nav-list a {
+        display: block;
+        padding: 10px;
+        text-decoration: none;
+        color: #061539;
+        font-weight: bold;
+    }
+
+    #nav-list.show {
+        display: flex;
+    }
+
+    body.menu-open {
+        margin-top: 380px;
+    }
+
+    /*schedule days header*/
+    .schedule-header {
+        width: fit-content;
+
+    }
+    .schedule-header .day {
+        padding: 10px; /* Add padding for better spacing */
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+}

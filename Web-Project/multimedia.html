@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia Page</title>
+    <link rel="icon" type="image/jpg" href="./mediaa/pic8.jpg">
+    <link rel="stylesheet" href="CSS/multimedia.css">
+</head>
+
+<body>
+    
+    <div class="video-background">
+        <video autoplay muted loop playsinline preload="auto" id="background-video">
+            <source src="./mediaa/background-video.mp4" type="video/mp4">
+          
+        </video>
+    </div>
+   
+
+    <header id="header">
+      <div id="menu-toggle">&#9776;</div>
+      <nav id="nav-list">
+          <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="contact.html">Contact us</a></li>
+              <li><a href="media.html">Media</a></li>
+              <li><a href="php/quiz.php">Quiz</a></li>
+          </ul>
+      </nav>
+  </header>
+
+
+
+<div id="title-container">
+  <h1>Embark on a Journey to Explore the Wonders and Mysteries of Space</h1>
+  <p class="quote">"The cosmos is within us. We are made of star-stuff." - Carl Sagan</p>
+</div>
+       
+        
+        <div class="tabs">
+          <button class="tab-button" onclick="showTab('videos')">Videos</button>
+          <button class="tab-button" onclick="showTab('gallery')">Gallery</button>
+          <button class="tab-button" onclick="showTab('audio')">Audio</button>
+        </div>
+     
+      
+  
+  <div class="tab-content" id="videos">
+    <div class="video-carousel">
+      <button class="nav-button" onclick="scrollVideos(-1)">&lt;</button>
+      <div class="video-display">
+        <video id="mainVideo" src="./mediaa/video1.mp4" playsinline preload="auto" controls></video>
+      </div>
+      <button class="nav-button" onclick="scrollVideos(1)">&gt;</button>
+    </div>
+  </div>
+  
+  <div class="tab-content" id="gallery" style="display:none;">
+
+    <div class="gallery">
+      <img id="mainImage" class="main-image" src="./mediaa/pic1.jpg" alt="Main Image" loading="lazy">
+      <div class="thumbnails">
+        <img class="thumbnail" src="./mediaa/pic2.jpg" alt="Image1"  onclick="changeImage(this)" loading="lazy">
+        <img class="thumbnail" src="./mediaa/pic3.jpg"  alt="Image2" onclick="changeImage(this)" loading="lazy">
+        <img class="thumbnail" src="./mediaa/pic4.jpg" alt="Image3"   onclick="changeImage(this)" loading="lazy">
+        <img class="thumbnail" src="./mediaa/pic5.jpg" alt="Image4"  onclick="changeImage(this)" loading="lazy">
+        <img class="thumbnail" src="./mediaa/pic6.jpg" alt="Image5"  onclick="changeImage(this)" loading="lazy">
+        <img class="thumbnail" src="./mediaa/pic7.jpg" alt="Image6"  onclick="changeImage(this)" loading="lazy">
+        <img class="thumbnail" src="./mediaa/pic8.jpg" alt="Image7"  onclick="changeImage(this)" loading="lazy">
+        <img class="thumbnail" src="./mediaa/pic9.jpg" alt="Image8"  onclick="changeImage(this)" loading="lazy">
+        <img class="thumbnail" src="./mediaa/pic10.jpg" alt="Image9"  onclick="changeImage(this)" loading="lazy">
+        <img class="thumbnail" src="./mediaa/pic11.jpg" alt="Image10"  onclick="changeImage(this)" loading="lazy">
+        <img class="thumbnail" src="./mediaa/pic12.jpg" alt="Image11"  onclick="changeImage(this)" loading="lazy">
+        <img class="thumbnail" src="./mediaa/pic13.jpg" alt="Image12"  onclick="changeImage(this)" loading="lazy">
+        <img class="thumbnail" src="./mediaa/pic14.jpg" alt="Image13"  onclick="changeImage(this)" loading="lazy">
+        <img class="thumbnail" src="./mediaa/pic15.jpg" alt="Image14"  onclick="changeImage(this)" loading="lazy">
+        <img class="thumbnail" src="./mediaa/pic16.jpg" alt="Image15"  onclick="changeImage(this)" loading="lazy">
+        <img class="thumbnail" src="./mediaa/pic17.jpg" alt="Image16"  onclick="changeImage(this)" loading="lazy">
+        <img class="thumbnail" src="./mediaa/pic18.jpg" alt="Image17"  onclick="changeImage(this)" loading="lazy">
+        <img class="thumbnail" src="./mediaa/pic19.jpg" alt="Image18"  onclick="changeImage(this)" loading="lazy">
+        <img class="thumbnail" src="./mediaa/pic20.jpg" alt="Image19"  onclick="changeImage(this)" loading="lazy">
+        <img class="thumbnail" src="./mediaa/pic21.jpg" alt="Image20"  onclick="changeImage(this)" loading="lazy">
+      </div>
+    </div>
+
+  </div>
+
+  
+  <div class="tab-content" id="audio" style="display:none;">
+    <div class="audio-section">
+      <h2>🎧Audio Collection</h2>
+      <div class="audio-player">
+        <audio id="audioPlayer" controls>
+          <source src="./mediaa/audio1.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+      
+      <!-- Audio Playlist -->
+      <div class="audio-playlist">
+        <ul>
+          <li onclick="changeAudio('./mediaa/audio1.mp3')">Track 1: Space Exploration</li>
+          <li onclick="changeAudio('./mediaa/audio2.mp3')">Track 2: The Cosmos</li>
+          <li onclick="changeAudio('./mediaa/audio3.mp3')">Track 3: Journey Through the Stars</li>
+          <li onclick="changeAudio('./mediaa/audio4.mp3')">Track 4: Rocket engine</li>
+       
+        </ul>
+      </div>
+    </div>
+  </div>
+    
+ 
+ 
+
+
+
+<footer>
+    <div id="footer-container">
+        <div id="footer-info">
+            <p>Copyright 2025 WebProject.<br>All rights reserved.</p>
+        </div>
+        <div id="footer-links">
+            <ul class="footer-links-section">
+                <h4>QUICK LINKS</h4>
+                <li><a href="contact.html">Contact us</a></li>
+                <li><a href="media.html">Media</a></li>
+                <li><a href="multimedia.html">Multimedia</a></li>
+                <li><a href="php/quiz.php">Quiz</a></li>
+                <li><a href="meet-the-team.html">Meet the Team</a></li>
+                <li><a href="reference.html">Reference</a></li>
+            </ul>
+        </div>
+    </div>
+</footer> 
+
+
+    <script src="JS/multimedia.js"></script>
+    <script src="JS/header.js"></script>
+
+</body>
+
+</html>

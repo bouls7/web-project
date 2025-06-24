@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="CSS/index.css">
+</head>
+<body class="custom"><!-- the class custom is for the JS i needed a custom margin-top reset -->
+    <header id="header">
+        <div id="menu-toggle">&#9776;</div>
+        <nav id="nav-list">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+                <li><a href="media.html">Media</a></li>
+                <li><a href="php/quiz.php">Quiz</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="Banner">
+        <div class="banner-content">
+            <h2>WELCOME,<br><span style="font-weight: 100;">Space Is Calling<br>Are You Ready?</span></h2>
+            <a class="Button" href="multimedia.html">Get Started</a>
+        </div>
+    </div>
+
+    <div class="heading">
+        <h1>Who built this website?</h1>
+    </div>
+
+    <div class="main-content">
+
+        <div class="secondary-content-box">
+            <p>"Hello my name is elio and i contributed in building this webpage my role was to design the main layout and structure as to building the backend and key relations between files"</p>
+            <div class="line"></div>
+            <div class="secondary-content-box-2">
+                <div class="item1">
+                    <img src="Images/man-icon.png" alt="this is an image" height="50px" width="50px">
+                </div>
+                <div class="item2">
+                    <h4>Elio Akiki</h4>
+                    <p>Computer Science</p>
+                </div>
+            </div>
+            <a class="Button" href="meet-the-team.html#member1">Learn more</a>
+        </div>
+
+        <div class="secondary-content-box">
+            <p>"Hello my name is charbel and i contributed in building this webpage my role was to design the multi media page and layout and making sure its optimised for fast page loading."</p>
+            <div class="line"></div>
+            <div class="secondary-content-box-2">
+                <div class="item1">
+                    <img src="Images/man-icon.png" alt="this is an image" height="50px" width="50px">
+                </div>
+                <div class="item2">
+                    <h4>Charbel Kassas</h4>
+                    <p>Computer Science</p>
+                </div>
+            </div>
+            <a class="Button" href="meet-the-team.html" onclick="navigateToMember2()">Learn more</a>
+        </div>
+
+        <div class="secondary-content-box">
+            <p>"Hello my name is joe and i contributed in building this webpage my role was to design and build the quiz while insuring its user friendly and giving visual feedback where its due"</p>
+                <div class="line"></div>
+            <div class="secondary-content-box-2">
+                <div class="item1">
+                    <img src="Images/man-icon.png" alt="this is an image" height="50px" width="50px">
+                </div>
+                <div class="item2">
+                    <h4>Joe Rabbat</h4>
+                    <p>Computer Science</p>
+                </div>
+            </div>
+            <a class="Button" href="meet-the-team.html" onclick="navigateToMember3()">Learn more</a>
+        </div>
+    </div>
+
+    <div class="media-content">
+
+        <div class="heading">
+            <h1>General Knowledge</h1>
+        </div>
+
+        <div class="media-content-box">
+            <div class="content-box-img">
+                <img src="Images/internet-infra-struct.jpg" alt="an image">
+            </div>
+
+            <div class="vertical-separator" id="separator1"></div>
+            
+            <div class="content-box-info">
+                <h3>Internet Infra Structure</h3>
+                <br>
+                <p>One of the greatest things about the internet is that nobody really owns it. It is a global collection of networks, both
+                big and small. These networks connect in many different ways to form the single entity that we know as the internet.
+               </p>
+
+            <a class="Button" href="media.html#internet-infra-structure">Read more</a>
+            </div>
+        </div>
+
+        <div class="media-content-box">
+
+            <div class="content-box-info-2">
+                <h3>History of the Web</h3>
+                <br>
+                <p>Tim Berners-Lee wrote the first proposal for the World Wide Web in March 1989 and his second proposal in May 1990.
+                Together with Belgian systems engineer Robert Cailliau, this was formalised as a management proposal in November 1990.
+                </p>
+
+                <a class="Button" href="media.html#history-of-the-web">Read more</a>
+            </div>
+
+            <div class="vertical-separator" id="separator2"></div>
+
+            <div class="content-box-img-2">
+                <img src="Images/History-of-the-web.jpg" alt="an image">
+            </div>
+        
+        </div>
+
+        <div class="media-content-box">
+            <div class="content-box-img">
+                <img src="Images/statistics.png" alt="an image">
+            </div>
+        
+            <div class="vertical-separator" id="separator1"></div>
+        
+            <div class="content-box-info">
+                <h3>Internet Statistics</h3>
+                <br>
+                <p>
+                    The Digital & Connectivity Indicators refer to the various technology-related and digital indicators of a country. It
+                    provides a comprehensive look at past, current, and anticipated technological developments and digital transformations
+                    in a global comparison. These indicators are helpful for understanding scientific and technological advancements as well
+                    as making both short- and long-term business and policy decisions.
+                </p>
+
+                <a class="Button" href="media.html#internet-statistics">Read more</a>
+            </div>
+        </div>
+
+    </div>
+
+    <h1 class="heading">Test Your HTML & CSS Skills</h1>
+    <div class="quiz-container">
+
+        <div class="quiz-sub-container">   
+        
+            <h3>Beginner or not?</h3>
+            <br>
+            <p class="description">Challenge yourself with questions about web development and styling techniques.</p>
+            <a href="php/quiz.php" class="Button">Take Full Quiz</a>
+
+        </div>
+        
+    </div>
+
+    <footer>
+        <div id="footer-container">
+            <div id="footer-info">
+                <p>Copyright 2025 WebProject.<br>All rights reserved.</p>
+            </div>
+            <div id="footer-links">
+                <ul class="footer-links-section">
+                    <h4>QUICK LINKS</h4>
+                    <li><a href="contact.html">Contact us</a></li>
+                    <li><a href="media.html">Media</a></li>
+                    <li><a href="multimedia.html">Multimedia</a></li>
+                    <li><a href="php/quiz.php">Quiz</a></li>
+                    <li><a href="meet-the-team.html">Meet the Team</a></li>
+                    <li><a href="reference.html">Reference</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+<script src="JS/header.js"></script>
+<script type="module" src="JS/hash.js"></script>
+<script type="module" src="JS/anchor.js"></script>
+</body>
+</html>
